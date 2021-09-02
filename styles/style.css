@@ -234,3 +234,8 @@ html {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+textarea {
+  width: 500px;
+  height: 300px;
+}

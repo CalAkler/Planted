@@ -28,12 +28,30 @@
     </div>  
   </header> 
   <main>
-    <form action="#" class="contactForm" method="">
+    <div class="wrapper">
+      <form action="#" class="contactForm" method="">
+        <div class="userInfo">
+          <div class="name">
+            <label for="userName">Name</label>
+            <input type="text" name="userName" id="userName">
+          </div>
+          <div class="email">
+            <label for="userEmail">Email address</label>
+            <input type="email" name="userEmail" id="userEmail">
+          </div>
+        </div>
 
-    </form>
+        <div class="userMessage">
+          <label for="userMessage">Message</label>
+          <textarea name="userMessage" id="userMessage"></textarea>
+        </div>
 
-    <aside class="contactInfo">
-      <div class="wrapper">
+        <div class="submit">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+      
+      <aside class="contactInfo">
         <div class="socials">
           <ul>
             <li>
@@ -57,8 +75,8 @@
           <p>Toronto, Ontario</p>
           <p>M5V 2D5</p> <!-- added space for legibility -->
         </div>
-      </div>
-    </aside>
+      </aside>
+    </div>
   </main>
 
   <footer>
