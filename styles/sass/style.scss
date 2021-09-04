@@ -66,11 +66,11 @@ h1 {
 
 .articles {
   // padding: 80px 0;
-}
-
-.articles .wrapper {
-  display: flex;
-  width: 100%;
+      
+    .wrapper {
+      display: flex;
+      width: 100%;
+    }
 }
 
 .leftColumn {
@@ -79,18 +79,26 @@ h1 {
   margin-right: 70px;
 
     .articleImage {
-      margin-top: -60px 0;
+      margin-top: -35px;
       
         img {
           display: block;
-          box-shadow: 20px 20px $accent;
+          box-shadow: 25px 25px $accent;
         }
-        
-        article {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end;      
-        }
+    }
+}
+
+.leftColumn article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+    h5, p {
+      text-align: right;
+    }
+
+    .buttonBox {
+      margin: 30px 0;
     }
 }
 
@@ -100,17 +108,33 @@ h1 {
   margin-left: 70px;
 
     .articleImage {
-      margin-bottom: -60px 0;
+      margin-bottom: -35px;
       
         img {
           display: block;
-          box-shadow: -20px 20px $accent;
-        }
-        
-        article {
+          box-shadow: -25px 25px $accent;
         }
     }
 }
+
+.rightColumn article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+    h5, p {
+      text-align: left;
+    }
+
+    .buttonBox {
+      margin: 30px 0;
+    }
+}
+
+article h5 {
+  padding-top: 60px;
+}
+
 
 
 // MORE INFO SECTION
@@ -132,7 +156,7 @@ h1 {
   padding: 30px;
 
     p {
-      margin-left: 4.25rem;
+      margin-left: 4.7rem;
     }
 }
 

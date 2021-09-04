@@ -231,6 +231,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
   padding: 0;
 }
 
+h2 {
+  margin-top: 8rem;
+}
+
 h3 {
   padding-bottom: 25px;
 }
@@ -288,6 +292,10 @@ a {
 }
 .topBar li:hover a, .topBar li:focus-within a {
   color: #daca07;
+}
+
+.bleed {
+  background: #2C2C2C;
 }
 
 .logo {
@@ -409,6 +417,23 @@ label {
 /* ====================================
         BLOG PAGE
 ================================= */
+.headerBlog {
+  background-image: url(../assets/home-image-1.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.headerBlog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 /* ====================================
         CONTACT PAGE
 ================================= */
@@ -486,14 +511,15 @@ h1 {
   margin-right: 70px;
 }
 .leftColumn .articleImage {
-  margin-top: -60px 0;
+  margin-top: -35px;
 }
 .leftColumn .articleImage img {
   display: block;
-  -webkit-box-shadow: 20px 20px #F8E71C;
-          box-shadow: 20px 20px #F8E71C;
+  -webkit-box-shadow: 25px 25px #F8E71C;
+          box-shadow: 25px 25px #F8E71C;
 }
-.leftColumn .articleImage article {
+
+.leftColumn article {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,6 +530,12 @@ h1 {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+.leftColumn article h5, .leftColumn article p {
+  text-align: right;
+}
+.leftColumn article .buttonBox {
+  margin: 30px 0;
 }
 
 .rightColumn {
@@ -517,13 +549,37 @@ h1 {
   margin-left: 70px;
 }
 .rightColumn .articleImage {
-  margin-bottom: -60px 0;
+  margin-bottom: -35px;
 }
 .rightColumn .articleImage img {
   display: block;
-  -webkit-box-shadow: -20px 20px #F8E71C;
-          box-shadow: -20px 20px #F8E71C;
+  -webkit-box-shadow: -25px 25px #F8E71C;
+          box-shadow: -25px 25px #F8E71C;
 }
+
+.rightColumn article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.rightColumn article h5, .rightColumn article p {
+  text-align: left;
+}
+.rightColumn article .buttonBox {
+  margin: 30px 0;
+}
+
+article h5 {
+  padding-top: 60px;
+}
+
 .moreInfo {
   background: #F0EFED;
 }
@@ -546,7 +602,7 @@ h1 {
   padding: 30px;
 }
 .infoContainer p {
-  margin-left: 4.25rem;
+  margin-left: 4.7rem;
 }
 
 h5 {
