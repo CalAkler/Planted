@@ -3,6 +3,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
   padding: 0;
 }
 
+h3 {
+  padding-bottom: 25px;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1800px;
@@ -24,6 +28,8 @@ a {
 .buttonBox {
   background: $button;
   display: inline-block;
+  margin: 20px 40%;
+  padding: 8px;
 }
 
 // NAVIGATION

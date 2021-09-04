@@ -42,4 +42,18 @@ h1 {
 
 // ABOUT SECTION
 
+.about {
+  background: $background;
+  padding: 150px 0;
+  
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+}
+
+
+// ARTICLES SECTION
+
 

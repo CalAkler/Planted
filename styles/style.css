@@ -231,6 +231,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
   padding: 0;
 }
 
+h3 {
+  padding-bottom: 25px;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1800px;
@@ -252,6 +256,8 @@ a {
 .buttonBox {
   background: #0E902D;
   display: inline-block;
+  margin: 20px 40%;
+  padding: 8px;
 }
 
 .topBar {
@@ -352,6 +358,7 @@ p {
   font-family: "Roboto", sans-serif;
   line-height: 1.6rem;
   font-size: 1rem;
+  font-weight: normal;
 }
 
 .logo p {
@@ -420,4 +427,19 @@ h1 {
   position: absolute;
   right: 0;
   bottom: -15%;
+}
+
+.about {
+  background: #F0EFED;
+  padding: 150px 0;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
