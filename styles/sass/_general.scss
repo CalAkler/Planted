@@ -29,6 +29,10 @@ a {
   background: $button;
   display: inline-block;
   padding: 8px;
+
+    &:hover, &:focus-within {
+      background: darken($button, 10);
+    }
 }
 
 // NAVIGATION

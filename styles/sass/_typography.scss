@@ -41,9 +41,12 @@ h4 {
   letter-spacing: 1px;
 }
 
-h5 {
+h5, h5 a {
   font-size: 1.6rem;
   letter-spacing: 1px;
+  color: $base;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 h6 {

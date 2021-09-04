@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Planted</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/style.css">
   <script src="https://kit.fontawesome.com/51c2eb8596.js" crossorigin="anonymous"></script>
-  <title>Home | Planted</title>
 </head>
 <body>
-  <header>
+  <header class="headerHome">
     <div class="wrapper">
       <div class="topBar">
         <div class="logo">
@@ -50,7 +50,7 @@
         <div class="leftColumn">
           <article>
             <h5>Unique plants to discover</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique dolores accusantium, odit officia eaque quisquam repudiandae tenetur ipsam veritatis perferendis quae iusto quos, nam vero deserunt aperiam corrupti adipisci.</p>  
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus similique dolores accusantium, odit officia eaque quisquam repudiandae, vero deserunt aperiam corrupti adipisci.</p>  
             <div class="buttonBox">
               <a href="#">Read More</a>
             </div>          
@@ -63,7 +63,7 @@
         <div class="rightColumn">
           <article>
             <h5>Upcoming workshops</h5> <!-- amended from "worshops" -->
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum recusandae molestiae nostrum, sunt illum quia eveniet minus totam, odit impedit alias fugit eos perferendis saepe maiores culpa quod numquam, eligendi consequatur error architecto.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsum recusandae molestiae nostrum, sunt illum quia eveniet minus totam, eligendi consequatur error architecto.</p>
             <div class="buttonBox">
               <a href="#">Read More</a>
             </div>
@@ -75,30 +75,55 @@
       </div>
     </section>
 
+  <!-- Found solution to font-awesome icon stacking in this article https://markheath.net/post/font-awesome-circle-background by Mark Heath. Credit to him. -->
     <section class="moreInfo">
       <div class="wrapper">
         <div class="infoContainer">
-          <h5>Green houses</h5>
+          <h5>
+            <span class="fa-stack fa-1x">
+              <i class="fa fa-circle fa-stack-2x iconBackground"></i>
+              <i class="fas fa-leaf fa-stack-1x"></i>
+            </span>
+            Green houses
+          </h5>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea illo dolorem iure libero sapiente in aliquid modi qui molestias expedita.</p>
         </div>
         <div class="infoContainer">
-          <h5>Community</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod nemo ipsa facere, quam ducimus id nobis corporis debitis, omnis sint repudiandae, dicta facilis odio!</p>
+          <h5>
+            <span class="fa-stack fa-1x">
+              <i class="fa fa-circle fa-stack-2x iconBackground"></i>
+              <i class="fas fa-users fa-stack-1x"></i>
+            </span>
+            Community
+          </h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus quod nemo ipsa facere, quam ducimus id nobis dicta facilis odio!</p>
         </div>
         <div class="infoContainer">
-          <h5><a href="./pages/blog.html">Blog</a></h5>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, adipisci? Labore perferendis recusandae ipsa, quaerat ipsum, fuga laudantium voluptates ducimus autem delectus error cupiditate nihil!</p>
+          <h5>
+            <span class="fa-stack fa-1x">
+              <i class="fa fa-circle fa-stack-2x iconBackground"></i>
+              <i class="fas fa-file fa-stack-1x"></i>
+            </span>
+            <a href="./pages/blog.html">Blog</a>
+          </h5>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore perferendis recusandae ipsa, voluptates ducimus cupiditate nihil!</p>
         </div>
         <div class="infoContainer">
-          <h5><a href="">Get in touch</a></h5> <!-- made "Touch" lowercase to keep case style consistant" -->
+          <h5>
+            <span class="fa-stack fa-1x">
+              <i class="fa fa-circle fa-stack-2x iconBackground"></i>
+              <i class="fas fa-phone fa-stack-1x"></i>
+            </span>
+            <a href="./pages/contact.html">Get in touch</a>
+          </h5> <!-- made "Touch" lowercase to keep case style consistant" -->
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus numquam tempore quia aut facilis blanditiis!</p>
         </div>
       </div>
+      <div class="banner">
+        <img src="./assets/banner-image.jpg" alt="Two white vases filled with flowers and a white teapot aligned on a windowsill.">
+      </div>
     </section>
 
-    <div class="banner">
-      <img src="./assets/banner-image.jpg" alt="Two white vases filled with flowers and a white teapot aligned on a windowsill.">
-    </div>
 
     <section class="founder">
       <div class="wrapper">
