@@ -256,7 +256,6 @@ a {
 .buttonBox {
   background: #0E902D;
   display: inline-block;
-  margin: 20px 40%;
   padding: 8px;
 }
 
@@ -264,12 +263,18 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   padding-top: 35px;
 }
 .topBar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 .topBar li {
   padding: 5px 15px 0;
@@ -442,4 +447,62 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  width: 70%;
+}
+.about .wrapper .buttonBox {
+  margin: 20px 40%;
+}
+
+.articles .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  width: 100%;
+}
+
+.leftColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  margin-right: 70px;
+}
+.leftColumn .articleImage {
+  margin-top: -60px 0;
+}
+.leftColumn .articleImage img {
+  display: block;
+  -webkit-box-shadow: 20px 20px #F8E71C;
+          box-shadow: 20px 20px #F8E71C;
+}
+.leftColumn .articleImage article > * {
+  text-align: right;
+}
+
+.rightColumn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 70px;
+}
+.rightColumn .articleImage {
+  margin-bottom: -60px 0;
+}
+.rightColumn .articleImage img {
+  display: block;
+  -webkit-box-shadow: -20px 20px #F8E71C;
+          box-shadow: -20px 20px #F8E71C;
+}
+.rightColumn .articleImage article > * {
+  text-align: left;
 }
