@@ -4,11 +4,67 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 }
 
 .wrapper {
-  width: 80%;
-  max-width: 1300px;
+  width: 85%;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+}
+
+ul:not(.sideRecent ul) {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttonBox {
+  background: $button;
+  display: inline-block;
+}
+
+// NAVIGATION
+
+.topBar {
+  display: flex;
+  padding-top: 35px;
+
+    ul {
+      display: flex;
+    }
+
+      li {
+        padding: 5px 15px 0;
+
+          &:hover a, &:focus-within a {
+            color: darken($accent, 10);
+          }
+      }
+}
+
+.logo {
+  padding-right: 15px;
+}
+
+
+// FOOTER
+
+footer {
+  background: $base;
+
+    p {
+      color: grey;
+      text-align: center;
+
+        a {
+          color: inherit;
+            
+            &:hover, &:focus {
+              text-decoration: underline;
+            }
+        }
+    }
 }

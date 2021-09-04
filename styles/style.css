@@ -232,13 +232,62 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 }
 
 .wrapper {
-  width: 80%;
-  max-width: 1300px;
+  width: 85%;
+  max-width: 1800px;
   margin: 0 auto;
 }
 
 img {
   max-width: 100%;
+}
+
+ul:not(.sideRecent ul) {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.buttonBox {
+  background: #0E902D;
+  display: inline-block;
+}
+
+.topBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 35px;
+}
+.topBar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.topBar li {
+  padding: 5px 15px 0;
+}
+.topBar li:hover a, .topBar li:focus-within a {
+  color: #daca07;
+}
+
+.logo {
+  padding-right: 15px;
+}
+
+footer {
+  background: #2C2C2C;
+}
+footer p {
+  color: grey;
+  text-align: center;
+}
+footer p a {
+  color: inherit;
+}
+footer p a:hover, footer p a:focus {
+  text-decoration: underline;
 }
 
 html {
@@ -249,13 +298,21 @@ html {
 }
 
 h1 {
-  font-size: 8.3rem;
+  font-size: 7.3rem;
   font-weight: normal;
+  color: white;
+  line-height: 5.8rem;
+}
+h1 span {
+  display: block;
+  color: #F8E71C;
+  text-transform: lowercase;
 }
 
 h2 {
   font-size: 4rem;
   line-height: 4.6rem;
+  color: #F8E71C;
 }
 
 h3 {
@@ -297,8 +354,70 @@ p {
   font-size: 1rem;
 }
 
+.logo p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+a {
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
 label {
   font-weight: light;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+
+.active {
+  color: #F8E71C;
+}
+
+.logo p {
+  color: white;
+}
+
+/* ====================================
+        HOME PAGE
+================================= */
+header {
+  background-image: url(../assets/home-image-1.jpg);
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+h1 {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-top: 7rem;
+  z-index: 10;
+}
+
+.headerImage {
+  height: 70vh;
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: -15%;
 }

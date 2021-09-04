@@ -2,3 +2,44 @@
 @import "vars";
 @import "general";
 @import "typography";
+
+
+/* ====================================
+        HOME PAGE
+================================= */
+
+
+// HEADER
+
+header {
+  background-image: url(../assets/home-image-1.jpg);
+  height: 85vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header .wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  align-self: center;
+  padding-top: 7rem;
+  z-index: 10;
+}
+
+.headerImage {
+  height: 70vh; 
+  width: 40%;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  bottom: -15%;
+}
+
+
+// ABOUT SECTION
+
+

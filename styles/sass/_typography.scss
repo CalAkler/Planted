@@ -2,17 +2,27 @@ html {
   font-size: 125%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  color: #2C2C2C;
+  color: $base;
 }
 
 h1 {
-  font-size: 8.3rem;
+  // reduced suggested font-size to better suit design
+  font-size: 7.3rem;
   font-weight: normal;
+  color: white;
+  line-height: 5.8rem;
+
+    span {
+      display: block;
+      color: $accent;
+      text-transform: lowercase;
+    }
 }
 
 h2 {
   font-size: 4rem;
   line-height: 4.6rem;
+  color: $accent;
 }
 
 h3 {
@@ -54,8 +64,32 @@ p {
   font-size: 1rem;
 }
 
+.logo p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+a {
+  font-size: 1rem;
+  color: white;
+  font-weight: normal;
+}
+
+nav a {
+  text-transform: uppercase;
+}
+
 label {
   font-weight: light;
   font-size: 1rem;
   line-height: 1.6rem;
+}
+
+.active {
+  color: $accent;
+}
+
+.logo p {
+  color: white;
 }
