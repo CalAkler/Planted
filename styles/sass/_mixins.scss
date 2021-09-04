@@ -1,9 +1,0 @@
-@mixin beforeIcon($i) {
-  content: $i;
-  background: $accent;
-}
-
-<i class="fas fa-leaf"></i>
-<i class="fas fa-users"></i>
-<i class="fas fa-file"></i>
-<i class="fas fa-phone"></i>

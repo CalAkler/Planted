@@ -2,6 +2,8 @@
 @import "vars";
 @import "general";
 @import "typography";
+@import "blog";
+@import "contact";
 
 
 /* ====================================
@@ -115,21 +117,27 @@ h1 {
 
 .moreInfo {
   background: $background;
+    
+    .wrapper {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: $sectionPadding;
+      }
 }
 
-.moreInfo .wrapper {
-  display: flex; 
-  flex-wrap: wrap;
-}
 
 .infoContainer {
   flex: 1 0 50%;
   padding: 30px;
+
+    p {
+      margin-left: 4.25rem;
+    }
 }
 
 h5 {
   padding-bottom: 10px;
-  margin-left: -4.25rem;
   
     i {
       font-size: 1.5rem;
@@ -150,6 +158,30 @@ h5:focus-within a {
 
 .founder {
   background: $background;
+
+    .wrapper {
+      display: flex; 
+      justify-content: space-between;
+      padding: $sectionPadding;
+    }
+}
+
+.founderImage {
+  width: 30%;
+  margin-right: 40px; 
+
+    img {
+      box-shadow: 20px 20px $accent;
+    }
+}
+
+.founderText {
+  width: 70%;
+  margin-left: 40px;
+
+    .buttonBox {
+      margin-top: 25px;
+    }
 }
 
 

@@ -235,6 +235,10 @@ h3 {
   padding-bottom: 25px;
 }
 
+h4 {
+  padding-bottom: 25px;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1800px;
@@ -403,6 +407,12 @@ label {
 }
 
 /* ====================================
+        BLOG PAGE
+================================= */
+/* ====================================
+        CONTACT PAGE
+================================= */
+/* ====================================
         HOME PAGE
 ================================= */
 .headerHome {
@@ -517,13 +527,16 @@ h1 {
 .moreInfo {
   background: #F0EFED;
 }
-
 .moreInfo .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 70px 0;
 }
 
 .infoContainer {
@@ -532,10 +545,12 @@ h1 {
           flex: 1 0 50%;
   padding: 30px;
 }
+.infoContainer p {
+  margin-left: 4.25rem;
+}
 
 h5 {
   padding-bottom: 10px;
-  margin-left: -4.25rem;
 }
 h5 i {
   font-size: 1.5rem;
@@ -552,6 +567,32 @@ h5:focus-within a {
 
 .founder {
   background: #F0EFED;
+}
+.founder .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 70px 0;
+}
+
+.founderImage {
+  width: 30%;
+  margin-right: 40px;
+}
+.founderImage img {
+  -webkit-box-shadow: 20px 20px #F8E71C;
+          box-shadow: 20px 20px #F8E71C;
+}
+
+.founderText {
+  width: 70%;
+  margin-left: 40px;
+}
+.founderText .buttonBox {
+  margin-top: 25px;
 }
 
 .gallery {
