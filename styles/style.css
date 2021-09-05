@@ -461,7 +461,7 @@ label {
 }
 
 .blogMain aside {
-  margin: 100px 10% 0 0;
+  margin: 75px 10% 0 0;
 }
 .blogMain aside img {
   -webkit-box-shadow: 25px 0px white;
@@ -471,7 +471,7 @@ label {
 .sidebarText {
   margin: -20px -25px 0 20%;
   background: white;
-  padding: 2rem;
+  padding: 1.6rem;
 }
 .sidebarText h5 {
   padding: 20px 0;
@@ -497,7 +497,7 @@ label {
   margin-right: 0;
 }
 .mission .blogPost {
-  padding: 50px 0 5px 35px;
+  padding: 50px 10% 5px 35px;
   border-bottom: 5px solid #F8E71C;
   border-left: 5px solid #F8E71C;
 }
@@ -513,10 +513,13 @@ label {
   padding-bottom: 45px;
 }
 
+.missionImage {
+  background: #F8E71C;
+  margin-right: 20px;
+}
 .missionImage img {
-  -webkit-box-shadow: -20px 20px #F8E71C;
-          box-shadow: -20px 20px #F8E71C;
-  margin-left: 3%;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 
 .commentSection {
@@ -527,11 +530,32 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 40px 0 40px 0;
+}
+.commentSection h5 {
+  padding-bottom: 30px;
 }
 .commentSection .comment {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 25px;
+}
+.commentSection .comment .commentText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+}
+
+.commentImage {
+  padding: 20px;
+}
+.commentImage img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 /* ====================================

@@ -30,7 +30,7 @@
 // ASIDE
 
 .blogMain aside {
-  margin: 100px 10% 0 0;
+  margin: 75px 10% 0 0;
 
     img {
       box-shadow: 25px 0px white;
@@ -41,7 +41,7 @@
 .sidebarText {
   margin: -20px -25px 0 20%;
   background: white;
-  padding: 2rem;
+  padding: 1.6rem;
 
     h5 {
       padding: 20px 0;
@@ -67,7 +67,7 @@
     }
 
     .blogPost {
-      padding: 50px 0 5px 35px;
+      padding: 50px 10% 5px 35px;
       border-bottom: 5px solid $accent;
       border-left: 5px solid $accent; 
       
@@ -85,17 +85,43 @@
   padding-bottom: 45px;
 }
 
-.missionImage img {
-  box-shadow: -20px 20px $accent;
-  margin-left: 3%;
+.missionImage {
+  background: $accent;
+  margin-right: 20px;
+
+    img {
+      margin-left: 20px;
+      margin-bottom: 15px;
+      // box-shadow: -20px 20px $accent;
+      // Same question here, how to offset img above the yellow background/box shadow
+    }
 }
 
 .commentSection {
   display: flex;
   flex-direction: column;
+  padding: 40px 0 40px 0;
+
+    h5 {
+      padding-bottom: 30px;
+    }
 
     .comment {
       display: flex;
+      justify-content: space-around;
+      margin-bottom: 25px;
+
+        .commentText {
+          flex: 1 0 60%;
+        }
+    }
+}
+
+.commentImage {
+  padding: 20px;
+
+    img {
+      flex: 1 0 auto;
     }
 }
 
