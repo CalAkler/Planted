@@ -17,3 +17,38 @@
       flex-direction: column;
     }
 }
+
+
+// MAIN
+
+.blogMain {
+  display: flex;
+  background: $background;
+}
+
+
+// ASIDE
+
+.blogMain aside {
+  margin-right: 100px;
+}
+
+.sidebarText {
+  margin-left: 30%;
+  background: white;
+
+    div > {
+      text-align: left;
+      padding: 15px 15px;
+    }
+}
+
+.sideAbout a:hover,
+.sideAbout a:focus {
+  text-decoration: underline;
+}
+
+
+
+
+// BLOG POST SECTION
