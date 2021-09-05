@@ -52,6 +52,7 @@ h5, h5 a {
 h6 {
   font-size: 1rem;
   line-height: 1.6rem;
+  color: $blogHighlight;
 }
 
 .buttonBox a {
@@ -88,6 +89,15 @@ nav a {
   color: $blogHighlight;
   font-style: italic;
   font-weight: bold;
+}
+
+.byline {
+  font-style: italic;
+  color: $blogHighlight;
+
+    span {
+      font-weight: bold;
+    }
 }
 
 label {
