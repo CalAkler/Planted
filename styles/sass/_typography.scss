@@ -100,10 +100,16 @@ nav a {
     }
 }
 
-label {
-  font-weight: light;
+label,
+textarea::placeholder {
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.6rem;
+  color: lighten($base, 30);
+}
+
+textarea::placeholder {
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .active {

@@ -306,6 +306,79 @@ a {
   padding-right: 15px;
 }
 
+input[type=text],
+input[type=email] {
+  background: none;
+  border: none;
+  border-bottom: 2px solid #0E902D;
+}
+
+textarea {
+  background: none;
+  border: 2px solid #0E902D;
+  width: 100%;
+}
+textarea::-webkit-input-placeholder {
+  padding: 20px 0 0 50px;
+}
+textarea::-moz-placeholder {
+  padding: 20px 0 0 50px;
+}
+textarea:-ms-input-placeholder {
+  padding: 20px 0 0 50px;
+}
+textarea::-ms-input-placeholder {
+  padding: 20px 0 0 50px;
+}
+textarea::placeholder {
+  padding: 20px 0 0 50px;
+}
+
+button {
+  color: white;
+  background: #0E902D;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+}
+button:hover, button:focus {
+  background: #09621e;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+label {
+  padding-left: 50px;
+}
+
+.name {
+  margin-right: 15px;
+}
+
+.email {
+  margin-left: 15px;
+}
+
+.userComment {
+  margin: 30px 0 30px;
+}
+.userComment label {
+  visibility: hidden;
+}
+
 footer {
   background: #2C2C2C;
 }
@@ -419,10 +492,60 @@ nav a {
   font-weight: bold;
 }
 
-label {
-  font-weight: light;
+textarea::-webkit-input-placeholder {
+  font-weight: 300;
   font-size: 1rem;
   line-height: 1.6rem;
+  color: #797979;
+}
+
+textarea::-moz-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #797979;
+}
+
+textarea:-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #797979;
+}
+
+textarea::-ms-input-placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #797979;
+}
+
+label,
+textarea::placeholder {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.6rem;
+  color: #797979;
+}
+
+textarea::-webkit-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+textarea::-moz-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+textarea:-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+textarea::-ms-input-placeholder {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+textarea::placeholder {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .active {
@@ -530,7 +653,7 @@ label {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 40px 0 40px 0;
+  padding: 40px 10% 40px 0;
 }
 .commentSection h5 {
   padding-bottom: 30px;
@@ -556,6 +679,10 @@ label {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
+}
+
+.commentForm textarea {
+  height: 200px;
 }
 
 /* ====================================

@@ -77,6 +77,68 @@ a {
 }
 
 
+// FORM
+
+// replace defaults
+input[type=text], 
+input[type=email] {
+  @include formStyle(none);
+  border-bottom: 2px solid $button;
+}
+
+textarea {
+  @include formStyle(2px solid $button);
+  width: 100%;
+
+    &::placeholder {
+      padding: 20px 0 0 50px;
+    }
+}
+
+button {
+  color: white;
+  background: $button;
+  border: none;
+  width: 100%;
+  padding: 10px 0;
+
+    &:hover, &:focus {
+      background: darken($button, 10);
+    }
+}
+
+// positioning
+form {
+  display: flex;
+  flex-direction: column;
+
+    .userInfo {
+      display: flex;
+    }
+}
+
+label {
+  padding-left: 50px;
+}
+
+.name {
+  margin-right: 15px;
+}
+
+.email {
+  margin-left: 15px;
+}
+
+.userComment {
+  margin: 30px 0 30px;
+
+    label {
+      visibility: hidden;
+    }
+}
+
+
+
 // FOOTER
 
 footer {

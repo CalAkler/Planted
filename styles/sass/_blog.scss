@@ -100,7 +100,7 @@
 .commentSection {
   display: flex;
   flex-direction: column;
-  padding: 40px 0 40px 0;
+  padding: 40px 10% 40px 0;
 
     h5 {
       padding-bottom: 30px;
@@ -125,3 +125,6 @@
     }
 }
 
+.commentForm textarea {
+  height: 200px;
+}

@@ -1,0 +1,4 @@
+@mixin formStyle($border) {
+  background: none;
+  border: $border;
+}

@@ -1,7 +1,12 @@
 @import "setup";
 @import "vars";
+@import "mixins";
+
+// General styles
 @import "general";
 @import "typography";
+
+// Sub-pages
 @import "blog";
 @import "contact";
 
