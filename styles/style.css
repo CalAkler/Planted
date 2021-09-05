@@ -586,7 +586,7 @@ textarea::placeholder {
   color: white;
 }
 
-i {
+.socials i {
   font-size: 1.4rem;
   color: #0E902D;
 }
@@ -744,10 +744,12 @@ i {
 }
 
 .contactMain {
+  background: #F0EFED;
+}
+.contactMain .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #F0EFED;
 }
 
 .contactInfo {
@@ -758,7 +760,8 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 100px 20px 120px 0;
+  padding: 100px 40px 120px 0;
+  margin-left: -40px;
 }
 
 .socials {
@@ -774,9 +777,33 @@ i {
 .socials ul li {
   padding: 0 20px 15px 0;
 }
+.socials ul li i:hover,
+.socials ul li i:focus-within {
+  background: #0E902D;
+  color: #F0EFED;
+  border-radius: 20%;
+}
 
 .emailAddress {
   padding-bottom: 15px;
+}
+
+.address {
+  width: 150%;
+}
+
+.contactForm {
+  background: white;
+  -webkit-box-shadow: -15px 15px #F8E71C;
+          box-shadow: -15px 15px #F8E71C;
+  margin: -15% -40px 0 80px;
+  padding: 60px 60px 40px 60px;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.contactForm textarea {
+  height: 200px;
 }
 
 /* ====================================
