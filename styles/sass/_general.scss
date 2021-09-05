@@ -64,8 +64,12 @@ a {
       }
 }
 
-.bleed {
-  background: $base;
+.topBleed {
+  background: black;  
+}
+
+.subPage {
+  padding: 15px 0;
 }
 
 .logo {
