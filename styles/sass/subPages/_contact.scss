@@ -10,8 +10,34 @@
 }
 
 
-// MAIN
+// CONTACT ASIDE
 .contactMain {
   display: flex;
   background: $background;
 }
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px 120px 0;
+}
+
+.socials {
+  display: flex;
+
+    ul {
+      display: flex;
+
+        li {
+          padding: 0 20px 15px 0;
+        }
+    }
+}
+
+.emailAddress {
+  padding-bottom: 15px;
+}
+
+
+// FORM
+
