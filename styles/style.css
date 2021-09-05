@@ -381,10 +381,10 @@ h6 {
   letter-spacing: 1px;
 }
 
-p {
+p, .sideRecent li {
   font-family: "Roboto", sans-serif;
-  line-height: 1.6rem;
   font-size: 1rem;
+  line-height: 1.6rem;
   font-weight: normal;
 }
 
@@ -452,16 +452,20 @@ label {
 }
 
 .blogMain aside {
-  margin-right: 100px;
+  margin: 100px 80px 0 0;
+}
+.blogMain aside img {
+  -webkit-box-shadow: 25px 0px white;
+          box-shadow: 25px 0px white;
 }
 
 .sidebarText {
-  margin-left: 30%;
+  margin: -20px -25px 0 20%;
   background: white;
+  padding: 2rem;
 }
-.sidebarText div > {
-  text-align: left;
-  padding: 15px 15px;
+.sidebarText h5 {
+  padding: 20px 0;
 }
 
 .sideAbout a:hover,
