@@ -5,6 +5,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 
 h2 {
   margin-top: 8rem;
+
+    span {
+      display: block;
+    }
 }
 
 h3 {
@@ -80,6 +84,10 @@ a {
 // FORM
 
 // replace defaults
+.userInfo {
+  display: flex;
+}
+
 input[type=text], 
 input[type=email] {
   @include formStyle(none);
@@ -89,6 +97,7 @@ input[type=email] {
 textarea {
   @include formStyle(2px solid $button);
   width: 100%;
+  resize: none;
 
     &::placeholder {
       padding: 20px 0 0 50px;
@@ -122,11 +131,23 @@ label {
 }
 
 .name {
+  display: flex;
+  flex-direction: column;
   margin-right: 15px;
+
+    input {
+      width: calc(50% -30px);
+    }
 }
 
 .email {
+  display: flex;
+  flex-direction: column;
   margin-left: 15px;
+
+    input {
+      width: calc(50% -30px);
+    }
 }
 
 .userComment {

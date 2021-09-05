@@ -1,0 +1,17 @@
+/* ====================================
+        CONTACT PAGE
+================================= */
+
+
+// HEADER
+
+.headerContact {
+  @include headerStyles(url(../assets/contact-header-1.jpg), 70vh);
+}
+
+
+// MAIN
+.contactMain {
+  display: flex;
+  background: $background;
+}

@@ -1,4 +1,20 @@
+// form border
 @mixin formStyle($border) {
   background: none;
   border: $border;
 }
+
+
+// headers
+@mixin headerStyles($url, $vh) {
+    background-image: $url;
+    height: $vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+      }
+  }
