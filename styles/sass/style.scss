@@ -5,12 +5,12 @@
 // General styles
 @import "generalStyles/general";
 @import "generalStyles/typography";
+@import "generalStyles/mediaQueries";
 
 // Sub-pages
 @import "subPages/blog";
 @import "subPages/contact";
 
-@import "mediaQueries";
 
 
 
@@ -54,7 +54,7 @@ h1 {
       width: 70%;
 
         .buttonBox {
-          margin: 20px 40%;
+          margin: 20px 34%;
         }
     }
 }
@@ -144,7 +144,6 @@ article h5 {
       }
 }
 
-
 .infoContainer {
   flex: 1 0 50%;
   padding: 30px;
@@ -215,6 +214,10 @@ h5:focus-within a {
         .galleryImage {
           width: calc(100% / 3 - 20px);
           margin: 0 10px;
+
+            img {
+              height: 100%;
+            }
         }
     }
 }
