@@ -231,6 +231,10 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
   padding: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 h2 {
   margin-top: 8rem;
 }
@@ -282,6 +286,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   padding-top: 35px;
+  position: relative;
 }
 .topBar ul {
   display: -webkit-box;
@@ -310,6 +315,9 @@ a {
 .fa-bars {
   color: white;
   font-size: 1.6rem;
+  position: absolute;
+  top: 25;
+  right: 0;
 }
 
 .userInfo {
@@ -603,12 +611,16 @@ textarea::placeholder {
     visibility: visible;
   }
 
-  .wrapper {
+  div.wrapper {
     width: 90%;
   }
 
   .topBar {
-    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
   }
   .topBar nav {
     visibility: hidden;
@@ -696,14 +708,28 @@ textarea::placeholder {
     margin: 0;
   }
 }
-@media (max-width: 625px) {
-  body {
-    overflow-x: hidden;
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-top: 4rem;
   }
 
-  div.wrapper {
-    width: 100%;
-    padding: 0 20px;
+  section.about {
+    padding: 30px 0;
+  }
+  section.about div.wrapper {
+    width: 90%;
+  }
+  section.about div.wrapper h3 {
+    font-size: 1.6rem;
+  }
+  section.about div.wrapper .buttonBox {
+    margin: 20px 25%;
+  }
+
+  section.about p {
+    text-align: left;
   }
 }
 /* ====================================
