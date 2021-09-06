@@ -379,6 +379,9 @@ form .userInfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 label {
@@ -395,9 +398,6 @@ label {
           flex-direction: column;
   margin-right: 15px;
 }
-.name input {
-  width: calc(50% -30px);
-}
 
 .email {
   display: -webkit-box;
@@ -408,9 +408,6 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 15px;
-}
-.email input {
-  width: calc(50% -30px);
 }
 
 .userComment {
@@ -812,12 +809,13 @@ textarea::placeholder {
 }
 
 .missionImage {
-  background: #F8E71C;
   margin-right: 20px;
 }
 .missionImage img {
   margin-left: 20px;
   margin-bottom: 15px;
+  -webkit-box-shadow: -20px 22px #F8E71C;
+          box-shadow: -20px 22px #F8E71C;
 }
 
 .commentSection {

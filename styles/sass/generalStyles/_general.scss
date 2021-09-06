@@ -106,11 +106,11 @@ a {
 input[type=text], 
 input[type=email] {
   @include formStyle(none);
-  border-bottom: 2px solid $button;
+  border-bottom: $formBorder;
 }
 
 textarea {
-  @include formStyle(2px solid $button);
+  @include formStyle($formBorder);
   width: 100%;
   resize: none;
 
@@ -138,6 +138,7 @@ form {
 
     .userInfo {
       display: flex;
+      justify-content: space-between;
     }
 }
 
@@ -149,20 +150,12 @@ label {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
-
-    input {
-      width: calc(50% -30px);
-    }
 }
 
 .email {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
-
-    input {
-      width: calc(50% -30px);
-    }
 }
 
 .userComment {

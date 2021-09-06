@@ -57,7 +57,7 @@
     .blogPost {
       padding: 50px 10% 5px 35px;
       border-bottom: 5px solid $accent;
-      border-left: 5px solid $accent; 
+      border-left: 5px solid $accent;
       
         p {
           padding-bottom: 15px;
@@ -74,14 +74,12 @@
 }
 
 .missionImage {
-  background: $accent;
   margin-right: 20px;
 
     img {
       margin-left: 20px;
       margin-bottom: 15px;
-      // box-shadow: -20px 20px $accent;
-      // Same question here, how to offset img above the yellow background/box shadow
+      box-shadow: -20px 22px $accent;
     }
 }
 
