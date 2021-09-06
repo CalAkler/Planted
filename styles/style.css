@@ -248,7 +248,7 @@ h4 {
 
 .wrapper {
   width: 85%;
-  max-width: 1800px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -271,6 +271,10 @@ a {
 }
 .buttonBox:hover, .buttonBox:focus-within {
   background: #09621e;
+}
+
+.mobileOnly {
+  visibility: hidden;
 }
 
 .topBar {
@@ -307,6 +311,11 @@ a {
 
 .logo {
   padding-right: 15px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.6rem;
 }
 
 .userInfo {
@@ -806,6 +815,23 @@ textarea::placeholder {
   height: 200px;
 }
 
+@media (max-width: 800px) {
+  nav {
+    visibility: hidden;
+  }
+
+  .mobileOnly {
+    visibility: visible;
+  }
+
+  .headerImage {
+    display: none;
+  }
+
+  h1 {
+    font-size: 5.5rem;
+  }
+}
 /* ====================================
         HOME PAGE
 ================================= */
@@ -835,12 +861,12 @@ h1 {
 
 .headerImage {
   height: 70vh;
-  width: 40%;
+  width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
-  position: absolute;
-  right: 0;
-  bottom: -15%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: -30% -8.8% 0 0;
 }
 
 .about {

@@ -21,7 +21,7 @@ h4 {
 
 .wrapper {
   width: 85%;
-  max-width: 1800px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -45,6 +45,10 @@ a {
     &:hover, &:focus-within {
       background: darken($button, 10);
     }
+}
+
+.mobileOnly {
+  visibility: hidden;
 }
 
 // NAVIGATION
@@ -78,6 +82,11 @@ a {
 
 .logo {
   padding-right: 15px;
+}
+
+.fa-bars {
+  color: white;
+  font-size: 1.6rem;
 }
 
 

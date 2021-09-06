@@ -10,6 +10,8 @@
 @import "subPages/blog";
 @import "subPages/contact";
 
+@import "mediaQueries";
+
 
 
 /* ====================================
@@ -21,11 +23,6 @@
 
 .headerHome {
   @include headerStyles(url(../assets/home-image-1.jpg), 85vh);
-  
-    // .wrapper {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
 }
 
 
@@ -37,11 +34,10 @@ h1 {
 
 .headerImage {
   height: 70vh; 
-  width: 40%;
+  width: 50%;
   object-fit: cover;
-  position: absolute;
-  right: 0;
-  bottom: -15%;
+  align-self: flex-end;
+  margin: -30% -8.8% 0 0;
 }
 
 
