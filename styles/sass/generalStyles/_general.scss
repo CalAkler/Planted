@@ -150,12 +150,20 @@ label {
   display: flex;
   flex-direction: column;
   margin-right: 15px;
+
+    input {
+      width: 100%;
+    }
 }
 
 .email {
   display: flex;
   flex-direction: column;
   margin-left: 15px;
+
+  input {
+    width: 100%;
+  }
 }
 
 .userComment {

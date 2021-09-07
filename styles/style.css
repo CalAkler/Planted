@@ -398,6 +398,9 @@ label {
           flex-direction: column;
   margin-right: 15px;
 }
+.name input {
+  width: 100%;
+}
 
 .email {
   display: -webkit-box;
@@ -408,6 +411,9 @@ label {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 15px;
+}
+.email input {
+  width: 100%;
 }
 
 .userComment {
@@ -704,8 +710,38 @@ textarea::placeholder {
     width: calc(100% / 3);
     margin: 0;
   }
+
+  .blogMain aside {
+    display: none;
+  }
+
+  .blogMain .mission {
+    margin-top: -20%;
+  }
+
+  div.missionImage {
+    margin-left: 150px;
+  }
+
+  .blogPost {
+    border-top: 5px solid #F8E71C;
+  }
+
+  .commentForm .userInfo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .commentForm .userInfo .email {
+    margin: 25px 0 0 0;
+  }
 }
 @media (max-width: 480px) {
+  header h2 {
+    margin-top: 4rem;
+  }
+
   header h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -727,6 +763,16 @@ textarea::placeholder {
 
   section.about p {
     text-align: left;
+  }
+
+  .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .comment .commentImage {
+    padding: 0;
   }
 }
 /* ====================================
@@ -792,6 +838,7 @@ textarea::placeholder {
   margin-right: 0;
 }
 .mission .blogPost {
+  margin-right: 20px;
   padding: 50px 10% 5px 35px;
   border-bottom: 5px solid #F8E71C;
   border-left: 5px solid #F8E71C;

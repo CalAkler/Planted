@@ -21,7 +21,6 @@
       
         img {
           box-shadow: 25px 0px white;
-          // Is there a way to offset top without bleeding over on bottom?
         }
     }
 }
@@ -55,9 +54,10 @@
     }
 
     .blogPost {
+      margin-right: 20px;
       padding: 50px 10% 5px 35px;
-      border-bottom: 5px solid $accent;
-      border-left: 5px solid $accent;
+      border-bottom: $blogBorder;
+      border-left: $blogBorder;
       
         p {
           padding-bottom: 15px;
