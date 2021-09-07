@@ -337,6 +337,7 @@ textarea {
   background: none;
   border: 2px solid #0E902D;
   width: 100%;
+  height: 200px;
   resize: none;
 }
 textarea::-webkit-input-placeholder {
@@ -736,12 +737,56 @@ textarea::placeholder {
   .commentForm .userInfo .email {
     margin: 25px 0 0 0;
   }
-}
-@media (max-width: 480px) {
-  header h2 {
-    margin-top: 4rem;
+
+  .headerContact h2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
+  .contactMain .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  form.contactForm {
+    margin: -15% 0 0 40px;
+    padding: 40px 20px 20px 20px;
+  }
+
+  aside.contactInfo {
+    margin-left: 65px;
+    overflow-x: hidden;
+    padding: 60px 40px 40px 0;
+  }
+
+  .address {
+    width: 100%;
+  }
+  .address div:first-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address div:first-child p:not(:last-child) {
+    padding-right: 170px;
+  }
+
+  .address div:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .address div:last-child p {
+    padding-right: 40px;
+  }
+}
+@media (max-width: 480px) {
   header h1 {
     font-size: 4rem;
     line-height: 4rem;
@@ -763,6 +808,10 @@ textarea::placeholder {
 
   section.about p {
     text-align: left;
+  }
+
+  .headerBlog h2 {
+    margin-top: 4rem;
   }
 
   .comment {
@@ -901,10 +950,6 @@ textarea::placeholder {
           flex: 1 0 auto;
 }
 
-.commentForm textarea {
-  height: 200px;
-}
-
 /* ====================================
         CONTACT PAGE
 ================================= */
@@ -983,9 +1028,6 @@ textarea::placeholder {
   width: 100%;
   height: 100%;
   z-index: 10;
-}
-.contactForm textarea {
-  height: 200px;
 }
 
 /* ====================================
