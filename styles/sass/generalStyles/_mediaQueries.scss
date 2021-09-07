@@ -146,29 +146,42 @@
 
   .address {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
 
-      div:first-child {
-        display: flex;
-        
-          p:not(:last-child) {
-            padding-right: 170px;
-          }
-    }
+      .phoneNumber {
+        font-weight: bold;
+        padding-top: 0.9rem;
+      }
   }
 
-  .address div:last-child {
-    display: flex;
-
-      p {
-        padding-right: 40px;
-      }
+  .streetAddress {
+    margin-left: 80px;
   }
 }
 
 @media (max-width: 720px) {
 
   // CONTACT PAGE
-  
+  form.contactForm {
+    margin-left: 8px;
+  }
+
+  div.address {
+    flex-direction: column;
+  }
+
+  div.address > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .address div:first-child p:last-child {
+    padding-top: 0;
+  }
 }
 
 

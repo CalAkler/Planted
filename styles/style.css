@@ -767,23 +767,50 @@ textarea::placeholder {
 
   .address {
     width: 100%;
-  }
-  .address div:first-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 20px;
   }
-  .address div:first-child p:not(:last-child) {
-    padding-right: 170px;
+  .address .phoneNumber {
+    font-weight: bold;
+    padding-top: 0.9rem;
   }
 
-  .address div:last-child {
+  .streetAddress {
+    margin-left: 80px;
+  }
+}
+@media (max-width: 720px) {
+  form.contactForm {
+    margin-left: 8px;
+  }
+
+  div.address {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  div.address > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0;
   }
-  .address div:last-child p {
-    padding-right: 40px;
+
+  .address div:first-child p:last-child {
+    padding-top: 0;
   }
 }
 @media (max-width: 480px) {
