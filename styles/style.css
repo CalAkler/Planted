@@ -240,6 +240,7 @@ h2 {
 }
 h2 span {
   display: block;
+  padding-right: 20px;
 }
 
 h3 {
@@ -610,6 +611,11 @@ textarea::placeholder {
   font-weight: bold;
 }
 
+@media (max-width: 1000px) {
+  .headerContact h2 {
+    margin-top: 4rem;
+  }
+}
 @media (max-width: 880px) {
   .mobileOnly {
     visibility: visible;
@@ -728,13 +734,13 @@ textarea::placeholder {
     border-top: 5px solid #F8E71C;
   }
 
-  .commentForm .userInfo {
+  form .userInfo {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .commentForm .userInfo .email {
+  form .userInfo .email {
     margin: 25px 0 0 0;
   }
 
@@ -784,6 +790,14 @@ textarea::placeholder {
   }
 }
 @media (max-width: 720px) {
+  .headerContact h2 {
+    font-size: 2.4rem;
+  }
+  .headerContact h2 span {
+    display: inline-block;
+    padding-left: 0.5rem;
+  }
+
   form.contactForm {
     margin-left: 8px;
   }
