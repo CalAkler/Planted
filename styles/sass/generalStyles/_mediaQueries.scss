@@ -189,7 +189,7 @@
 
   // HOME PAGE
   header h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     line-height: 4rem;
     padding-top: 4rem;
   }
@@ -212,6 +212,22 @@
     
     section.about p {
     text-align: left;
+  }
+
+  .leftColumn article {
+    margin-right: -40px;
+  }
+
+  .rightColumn article {
+    margin-left: -40px;
+  }
+
+  h5 a {
+    font-size: 1.3rem;
+  }
+
+  div.infoContainer {
+    margin-left: -2rem;
   }
 
   // BLOG PAGE
