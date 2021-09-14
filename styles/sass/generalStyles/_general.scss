@@ -52,8 +52,8 @@ a {
     }
 }
 
-.mobileOnly,
-i.mobileOnly {
+nav.mobileOnly,
+button.mobileOnly {
   display: none;
 }
 
@@ -66,15 +66,15 @@ i.mobileOnly {
 
     ul {
       display: flex;
-    }
-
+      
       li {
         padding: 5px 15px 0;
-
-          &:hover a, &:focus-within a {
-            color: darken($accent, 10);
-          }
+        
+        &:hover a, &:focus-within a {
+          color: darken($accent, 10);
+        }
       }
+    }
 }
 
 .topBleed {
@@ -89,14 +89,6 @@ i.mobileOnly {
   padding-right: 15px;
 }
 
-.fa-bars {
-  color: white;
-  font-size: 1.6rem;
-}
-
-i.fa-times {
-  display: none;
-}
 
 // MOBILE MENU
 
@@ -104,11 +96,33 @@ i.fa-times {
   background: none;
   border: none;
   position: absolute;
-  // top: 25px; 
   right: 0;
 }
 
-.
+.expandedMenu {
+  display: block;
+  // position: relative;
+
+    ul {
+      flex-direction: column;
+      // position: absolute;
+      // top: 45px;
+      // right: 25px;
+      // z-index: 30;
+    }
+  
+}
+
+.fa-bars,
+.fa-times {
+  color: white;
+  font-size: 1.6rem;
+  z-index: 20;
+}
+
+i.fa-times {
+  display: none;
+}
 
 
 // FORM

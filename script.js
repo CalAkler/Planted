@@ -1,14 +1,28 @@
-// Listen for click event on hamburger menu button
-  // - when clicked, display mobile nav menu on page
-  // - toggle hamburger button to X button
-    // - when X is clicked, hide mobile menu
-
-
 const hamburger = document.querySelector('.hamburger');
+const mobileMenu = document.querySelector('.mobileMenu');
+const closeIcon = document.querySelector('.fa-times');
+const hamIcon = document.querySelector('.fa-bars');
 
-hamburger.addEventListener('click', () => {
-  console.log('you clicked it');
+// toggle hamburger button to X button when clicked, and vice versa
+const toggleMenu = () => {
 
-  const mobileMenu = document.querySelector('.mobileMenu');
-  mobileMenu.classList.add('');
-})
+  if (mobileMenu.classList.contains('expandedMenu')) {
+    mobileMenu.classList.remove('expandedMenu');
+    mobileMenu.classList.add('mobileOnly');
+    closeIcon.style.display = 'none';
+    hamIcon.style.display = 'block';
+  } else {
+    mobileMenu.classList.add('expandedMenu');
+    mobileMenu.classList.remove('mobileOnly');
+    closeIcon.style.display = 'block';
+    hamIcon.style.display = 'none';
+  }
+
+  // - when clicked, display mobile nav menu on page
+
+
+
+}
+
+// Listen for click event on hamburger menu button, passing in toggleMenu function
+hamburger.addEventListener('click', toggleMenu);

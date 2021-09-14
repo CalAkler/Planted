@@ -278,8 +278,8 @@ a {
   background: #09621e;
 }
 
-.mobileOnly,
-i.mobileOnly {
+nav.mobileOnly,
+button.mobileOnly {
   display: none;
 }
 
@@ -295,10 +295,10 @@ i.mobileOnly {
   display: -ms-flexbox;
   display: flex;
 }
-.topBar li {
+.topBar ul li {
   padding: 5px 15px 0;
 }
-.topBar li:hover a, .topBar li:focus-within a {
+.topBar ul li:hover a, .topBar ul li:focus-within a {
   color: #daca07;
 }
 
@@ -314,20 +314,32 @@ i.mobileOnly {
   padding-right: 15px;
 }
 
-.fa-bars {
-  color: white;
-  font-size: 1.6rem;
-}
-
-i.fa-times {
-  display: none;
-}
-
 .hamburger {
   background: none;
   border: none;
   position: absolute;
   right: 0;
+}
+
+.expandedMenu {
+  display: block;
+}
+.expandedMenu ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.fa-bars,
+.fa-times {
+  color: white;
+  font-size: 1.6rem;
+  z-index: 20;
+}
+
+i.fa-times {
+  display: none;
 }
 
 .userInfo {
@@ -626,7 +638,7 @@ textarea::placeholder {
   }
 }
 @media (max-width: 880px) {
-  i.mobileOnly,
+  button.mobileOnly,
 .mobileMenu {
     display: block;
   }
@@ -642,8 +654,8 @@ textarea::placeholder {
     height: 100%;
     overflow: hidden;
   }
-  .topBar nav {
-    visibility: hidden;
+  .topBar .desktopMenu {
+    display: none;
   }
 
   h3 {
