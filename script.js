@@ -4,6 +4,7 @@ const closeIcon = document.querySelector('.fa-times');
 const hamIcon = document.querySelector('.fa-bars');
 
 // toggle hamburger button to X button when clicked, and vice versa
+  // - when clicked, display mobile nav menu on page
 const toggleMenu = () => {
 
   if (mobileMenu.classList.contains('expandedMenu')) {
@@ -17,11 +18,6 @@ const toggleMenu = () => {
     closeIcon.style.display = 'block';
     hamIcon.style.display = 'none';
   }
-
-  // - when clicked, display mobile nav menu on page
-
-
-
 }
 
 // Listen for click event on hamburger menu button, passing in toggleMenu function
