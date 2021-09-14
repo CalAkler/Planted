@@ -278,8 +278,9 @@ a {
   background: #09621e;
 }
 
-.mobileOnly {
-  visibility: hidden;
+.mobileOnly,
+i.mobileOnly {
+  display: none;
 }
 
 .topBar {
@@ -316,8 +317,16 @@ a {
 .fa-bars {
   color: white;
   font-size: 1.6rem;
+}
+
+i.fa-times {
+  display: none;
+}
+
+.hamburger {
+  background: none;
+  border: none;
   position: absolute;
-  top: 25;
   right: 0;
 }
 
@@ -357,14 +366,14 @@ textarea::placeholder {
   padding: 20px 0 0 50px;
 }
 
-button {
+form button {
   color: white;
   background: #0E902D;
   border: none;
   width: 100%;
   padding: 10px 0;
 }
-button:hover, button:focus {
+form button:hover, form button:focus {
   background: #09621e;
 }
 
@@ -617,8 +626,9 @@ textarea::placeholder {
   }
 }
 @media (max-width: 880px) {
-  .mobileOnly {
-    visibility: visible;
+  i.mobileOnly,
+.mobileMenu {
+    display: block;
   }
 
   div.wrapper {

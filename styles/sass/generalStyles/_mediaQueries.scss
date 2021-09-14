@@ -8,8 +8,9 @@
 @media (max-width: 880px) {
 
   // GENERAL
-  .mobileOnly {
-    visibility: visible;
+  i.mobileOnly,
+  .mobileMenu {
+    display: block;
   }
 
   div.wrapper {
