@@ -1,3 +1,5 @@
+// The styles of the appended comment got messed up somewhere along the way. I'm going to leave it for now though, since the actual JS is working fine. 
+
 // listen for user submitting form
   // - grab user comment input and name, date submitted, then add them to the page
 
@@ -17,7 +19,7 @@ form.addEventListener('submit', (e) => {
   // get date
   const today = new Date;
   const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  date = today.toLocaleDateString(undefined, options);
+  const date = today.toLocaleDateString(undefined, options);
 
   // call printToPage function
   printToPage(date, name, comment);
@@ -28,17 +30,12 @@ form.addEventListener('submit', (e) => {
 
 const printToPage = (dateSubmitted, userName, userComment) => {
   const newComment = document.createElement('div');
-  console.log(dateSubmitted, userName, userComment);
   newComment.innerHTML = `
-    <div class="comment">
+    <article class="comment">
       <div class="commentImage"> 
-      <img src="../assets/default-profile.png" alt="Default profile image.">
+        <img src="../assets/default-profile.png" alt="Default profile image.">
       </div>
-      <div class="commentText">
-        <h6></h6>
-        <p></p>
-      </div>
-    </div>
+    </article>
   `;
 
   // add user text to new elements
@@ -48,18 +45,16 @@ const printToPage = (dateSubmitted, userName, userComment) => {
   const newParagraph = document.createElement('p');
   newParagraph.textContent = `${userComment}`;
 
-  // 
-  const commentSection = document.querySelector('.commentSection');
-  commentSection.appendChild(newHeader);
-  commentSection.appendChild(newParagraph);
-
-
-
-  // get comment section div from page and append new comment inside  
-  const commentText = document.querySelector('.comment');
-  commentText.appendChild(newComment);
+  // append user text to newComment element
+  const commentText = document.querySelector('.commentText');
+  newComment.appendChild(newHeader);
+  newComment.appendChild(newParagraph);
   
 
-
+  
+  
+  // get comment section article from page and append new comment inside  
+  const commentSection = document.querySelector('.commentSection');
+  commentSection.appendChild(newComment);
 }
 
