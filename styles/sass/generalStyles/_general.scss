@@ -52,8 +52,9 @@ a {
     }
 }
 
-.mobileOnly {
-  visibility: hidden;
+nav.mobileOnly,
+button.mobileOnly {
+  display: none;
 }
 
 // NAVIGATION
@@ -65,15 +66,15 @@ a {
 
     ul {
       display: flex;
-    }
-
+      
       li {
         padding: 5px 15px 0;
-
-          &:hover a, &:focus-within a {
-            color: darken($accent, 10);
-          }
+        
+        &:hover a, &:focus-within a {
+          color: darken($accent, 10);
+        }
       }
+    }
 }
 
 .topBleed {
@@ -88,12 +89,39 @@ a {
   padding-right: 15px;
 }
 
-.fa-bars {
+
+// MOBILE MENU
+
+.hamburger {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+}
+
+.expandedMenu {
+  display: block;
+  // position: relative;
+
+    ul {
+      flex-direction: column;
+      // position: absolute;
+      // top: 45px;
+      // right: 25px;
+      // z-index: 30;
+    }
+  
+}
+
+.fa-bars,
+.fa-times {
   color: white;
   font-size: 1.6rem;
-  position: absolute;
-  top: 25; 
-  right: 0;
+  z-index: 20;
+}
+
+i.fa-times {
+  display: none;
 }
 
 
@@ -121,7 +149,7 @@ textarea {
     }
 }
 
-button {
+form button {
   color: white;
   background: $button;
   border: none;

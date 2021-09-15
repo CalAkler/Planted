@@ -8,8 +8,9 @@
 @media (max-width: 880px) {
 
   // GENERAL
-  .mobileOnly {
-    visibility: visible;
+  button.mobileOnly,
+  .mobileMenu {
+    display: block;
   }
 
   div.wrapper {
@@ -21,8 +22,8 @@
     height: 100%;
     overflow: hidden;
 
-      nav {
-        visibility: hidden;
+      .desktopMenu {
+        display: none;
       }
   }
 

@@ -19,7 +19,7 @@
           <div class="logo">
             <p>Planted</p>
           </div>
-          <nav>
+          <nav class="desktopMenu">
             <ul>
               <li><a href="../index.html">Home</a></li>
               <li><a href="../index.html#about">About</a></li>
@@ -27,7 +27,23 @@
               <li><a href="./contact.html">Contact</a></li>
             </ul>
           </nav>
-          <i class="fas fa-bars mobileOnly"></i>
+
+          <button class="hamburger mobileOnly">
+            <div>
+              <i class="fas fa-bars"></i>
+            </div>
+              <i class="fas fa-times"></i>
+          </button>
+
+          <nav class="mobileMenu mobileOnly">
+            <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../index.html#about">About</a></li>
+              <li><a class="active" href="./blog.html">Blog</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
         </div>
       </div>
     </div>
@@ -74,7 +90,7 @@
 
         <div class="commentSection">
           <h5>Comments:</h5>
-          <div class="comment">
+          <article class="comment">
             <div class="commentImage">
               <img src="../assets/profile-image.jpg" alt="Headshot of a man staring off to the side against a backdrop of pink flowers.">
             </div>
@@ -82,8 +98,8 @@
               <h6>Tuesday October 9th, 2018 by Jeremy </h6>   <!-- Unsure if this is a typo or time travel situation, comments on post were written months before post was posted? Please advise. -->
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi molestiae nisi perferendis tempore illo quibusdam quasi quia at ullam facilis quos vel rerum?</p>
             </div>
-          </div>
-          <div class="comment">
+          </article>
+          <article class="comment">
             <div class="commentImage">
               <img src="../assets/profile-image-2.jpg"
                 alt="Headshot of a woman in a large hat.">
@@ -92,13 +108,13 @@
               <h6>Wednesday October 10th, 2018 by Julia </h6>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero cum sapiente non facilis, deserunt amet nesciunt tenetur?</p>
             </div>
-        </div>
+        </article>
 
         <form action="#" class="commentForm" method="">
           <div class="userInfo">
             <div class="name">
               <label for="userName">Name</label>
-              <input type="text" name="userName" id="userName">
+              <input type="text" name="userName" id="userName" required>
             </div>
             <div class="email">
               <label for="userEmail">Email address</label>
@@ -108,7 +124,7 @@
         
           <div class="userComment">
             <label class="sr-only" for="userComment">Comment</label>
-            <textarea name="userComment" id="userComment" placeholder="Comment"></textarea>
+            <textarea name="userComment" id="userComment" placeholder="Comment" required></textarea>
           </div>
         
           <div class="submit">
@@ -122,6 +138,8 @@
   <footer>
     <p>Copyright © 2018 <a href="https://junocollege.com/">HackerYou</a></p>
   </footer>
+  <script src="../scripts/mobileMenu.js"></script>
+  <script src="../scripts/comments.js"></script>
 </body>
 
 </html>
