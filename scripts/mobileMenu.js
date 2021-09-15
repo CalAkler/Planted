@@ -1,3 +1,5 @@
+// This mobile menu seems to be broken when deployed on GitHub. It works fine locally and it works fine when the same branch is deployed on Netlify. No idea why. 
+
 const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobileMenu');
 const closeIcon = document.querySelector('.fa-times');
